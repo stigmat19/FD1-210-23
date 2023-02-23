@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background: aqua;
+            overflow: hidden;
+            /* background: url("2.jpg") no-repeat right 20px top 20px,
+                        url("3.jpg") no-repeat left top blue; */
+
+
+            /* background-image: url("2.jpg"), url("3.jpg");
+            background-repeat: no-repeat, no-repeat;
+            background-position: right top, left top;
+            background-color: blue; */
+        }
+        body{
+            height: 10000px;
+        }
+        td, th{
+            height: 50px;
+            width: 50px;
+            border: 1px solid black;
+        }
+        table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+        /* td:nth-child(2), th:nth-child(2){
+            background-color: blue;
+        } */
+    </style>
+</head>
+<body>
+
+    <div style="width: 500px; height: 500px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis cumque nihil earum ex, necessitatibus praesentium quidem, rem quo eveniet deleniti fuga eum consequa fuga eum consequatur perferendis ve fuga eum consequatur perferendis veritatis accusantium dolores ullam! Earum, quas?ritatis accusantium dolores ullam! Earum, quas?tur perferendis veritatis accusantium dolores ullam! Earum, quas?</div>
+
+
+    <hr>
+
+    <table>
+        <caption>hello</caption>
+        <colgroup style="background-color: red;">
+            <col>
+            <col>
+        </colgroup>
+        <colgroup style="background-color: blue;">
+            <col>
+            <col>
+            <col>
+        </colgroup>
+
+        <tr>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th> 
+            <th>2</th>
+            <th>3</th>
+        </tr>
+        <tr>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th> 
+            <th>2</th>
+            <th>3</th>
+        </tr>
+        <tr>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th> 
+            <th>2</th>
+            <th>3</th>
+        </tr>
+    </table>
+</body>
+
+</html>
