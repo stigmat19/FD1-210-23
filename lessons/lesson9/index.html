@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        a:visited{
+            color: green;
+        }
+        a:link{
+            color: rgb(255, 0, 0);
+        }
+        a:focus{
+            font-weight: bold;
+        }
+        a:active{
+            font-style: italic;
+        }
+
+        a:hover{
+            background-color: red;
+            color: #fff;
+        }
+        a::before{
+            content: "------ ";
+        }
+        a::after{
+            content: " ------"; 
+        }
+
+        p:first-letter{
+            background: black;
+            color: rgb(0, 254, 0);
+        }
+        [href]::after{
+            content: attr(href);
+        }
+
+        body{
+            counter-reset: planet;
+        }
+
+        li::before{
+            
+            counter-increment: planet;
+            content: 'Планета ' counter(planet) ': ';
+        }
+        table{
+            counter-reset: td;
+            border-collapse: collapse;
+        }
+        td{
+            width: 20px;
+            height: 20px;
+            border: 1px solid black;
+            text-align: center;
+        }
+        td::before{
+            counter-increment:td +2;
+            content: counter(td);
+        }
+        tr:nth-child(odd) td:nth-child(even){
+            background: black;
+            color: #fff;
+        }
+        tr:nth-child(even) td:nth-child(odd){
+            background: black;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    
+    <p href="hello">test----</p>
+
+    <a data-blabla="hello" href="https://www.onliner.by/">hello</a>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis nobis quas repudiandae, odit placeat, dolorem debitis cumque quos asperiores modi corrupti repellat id autem illum, odio saepe possimus expedita facere.</p>
+    <p>Odit earum, saepe ad atque omnis soluta ut consequuntur explicabo nam repellat. Quae velit illum tempore repudiandae sit molestiae, error nostrum beatae. Omnis modi totam rerum saepe! Harum, voluptatem ex!</p>
+    <p>Quam numquam debitis ipsam repellendus! Error quod, in iusto blanditiis sed unde labore alias, sapiente odit explicabo delectus molestias quidem? Rem quo iusto nobis in? Illo, eaque deleniti. Modi, aliquid.</p>
+    
+
+    <a href="test"></a>
+
+
+    <ul>
+        <li>Юпитер</li>
+        <li>Венера</li>
+        <li>Меркурий</li>
+        <li>Земля</li>
+        <li>Земля</li>
+        <li>Земля</li>
+        <li>Земля</li>
+        <li>Земля</li>
+        <li>Земля</li>
+    </ul>
+
+    <ul>
+        <li>Юпитер</li>
+        <li>Венера</li>
+        <li>Меркурий</li>
+        <li>Земля</li>
+    </ul>
+
+    <table>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html>

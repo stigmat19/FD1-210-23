@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .wrap{
+            background: pink;
+        }
+        .menu{
+            width: 200px;
+            height: 300px;
+            float: left;
+            background: red;
+        }
+        .banner{
+            width: 200px;
+            height: 300px;
+            float: right;
+            background: blue;
+        }
+        .content{
+            margin-left: 200px;
+            margin-right: 200px;
+            background: green;
+        }
+        .clear{
+            clear: both;
+        }
+        .clearfix:after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+    </style>    
+    
+</head>
+<body>
+
+    <div class="wrap clearfix">
+        <div class="menu"></div>
+        <div class="banner"></div>
+        <div class="content"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam blanditiis quibusdam ea, et nulla optio facere error ad. Ipsam, deleniti? Consectetur ipsa id perferendis accusantium? Commodi quaerat harum est repellat!</div>
+    </div>
+    
+</body>
+</html>
