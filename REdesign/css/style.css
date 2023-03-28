@@ -20,6 +20,10 @@ body {
     margin: 0 auto;
 }
 
+.humb{
+    display: none;
+}
+
 a {
     color: inherit;
     text-decoration: none;

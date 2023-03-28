@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label{
+            user-select: none;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="http://fe.it-academy.by/TestForm.php" method="get">
+        <input type="text" value="hello" name="val1" placeholder="name"> <br>
+        <input type="password" value="123" name="pass" placeholder="pass" autofocus> <br>
+
+        <hr>
+
+        <label for="test">I'm not robot</label>
+        <input id="test" type="checkbox" value="Yes" name="check"> <br>
+
+        <hr>
+
+        <label><input type="radio" value="man" name="users"> man</label> 
+        <label><input type="radio" value="woman" name="users"> woman</label> 
+
+        <hr>
+
+        <label><input type="radio" value="car" name="techniks"> car</label>  
+        <label><input type="radio" value="moto" name="techniks"> moto</label> <br>
+
+        <hr>
+        <input type="file">
+
+        <input type="hidden"> <br> <br>
+
+        <textarea name="text" cols="30" rows="10" placeholder="hello">hello world</textarea> <br>
+
+        <hr>
+
+        <select name="transport[]" multiple size="6">
+            <optgroup label="cars">
+                <option value="audi">audi</option>
+                <option value="bmw" disabled>bmw</option>
+                <option value="mers" selected>mers</option>
+            </optgroup>
+            <optgroup label="moto">
+                <option value="honda">honda</option>
+                <option value="suzuki">suzuki</option>
+                <option value="kawasaki">kawasaki</option>
+            </optgroup>
+        </select>
+        <hr>
+        <button type="submit" >send</button>
+    </form>
+
+    <hr>
+
+    <form action="http://fe.it-academy.by/TestForm.php" method="post">
+        Вы курите?<br>
+        <input type="radio" value="Yes" name="test"> yes <br>
+        <input type="radio" value="no" name="test">no <br>
+        <input type="hidden" value="smoking" name="type">
+        <input type="submit">
+    </form>
+    <hr>
+    <form action="http://fe.it-academy.by/TestForm.php" method="post">
+        Вы пьете?<br>
+        <input type="radio" value="Yes" name="test"> yes<br>
+        <input type="radio" value="no" name="test">no <br>
+        <input type="hidden" value="drinking" name="type">
+        <input type="submit">
+    </form>
+    
+</body>
+</html>

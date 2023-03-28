@@ -62,14 +62,17 @@
             counter-increment:td +2;
             content: counter(td);
         }
-        tr:nth-child(odd) td:nth-child(even){
+   
+        tr:nth-child(even) td:nth-child(odd),
+        tr:nth-child(odd) td:nth-child(even) {
             background: black;
             color: #fff;
         }
-        tr:nth-child(even) td:nth-child(odd){
-            background: black;
-            color: #fff;
-        }
+
+        table.chesh tr:first-of-type td{
+            background: green;
+            height: 25px;
+        }   
     </style>
 </head>
 <body>
@@ -106,7 +109,7 @@
         <li>Земля</li>
     </ul>
 
-    <table>
+    <table class="chesh">
         <tr>
             <td></td>
             <td></td>

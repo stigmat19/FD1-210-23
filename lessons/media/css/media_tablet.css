@@ -1,0 +1,12 @@
+
+@media all and (max-width: 1200px) {
+    .content{
+        margin-left: 0;
+        margin-right: 0;
+        background-color: rgb(47, 247, 2);
+    }
+    .menu, .banner{
+        float: none;
+        width: auto;
+    }
+}

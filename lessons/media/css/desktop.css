@@ -1,0 +1,29 @@
+
+.header{
+    height: 50px;
+    background: red;
+}
+.footer{
+    height: 50px;
+    background: blue;
+}
+.wrap{
+    background-color: rgb(43, 171, 226);
+}
+.menu{
+    width: 200px;
+    height: 300px;
+    background-color: rgb(237, 75, 0);
+    float: left;
+}
+.banner{
+    float: right;
+    width: 200px;
+    height: 300px;
+    background-color: blueviolet;
+}
+.content{
+    margin-left: 200px;
+    margin-right: 200px;
+    background-color: darkgoldenrod;
+}
