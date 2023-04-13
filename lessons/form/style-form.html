@@ -27,10 +27,19 @@
             background-size: 75px;
         }
 
-        input:checked + label::before {
+        input:checked+label::before {
             content: '';
             background: url(check.jpg) no-repeat -39px -9px;
             background-size: 75px;
+        }
+
+        input:required {
+            border: 3px solid red;
+        }
+
+        input:disabled {
+            display: flex;
+            border: 3px solid blue;
         }
     </style>
 
@@ -39,12 +48,37 @@
 
 <body>
 
-    <form action="http://fe.it-academy.by/TestForm.php" method="post">
+
+    <!-- <form action="http://fe.it-academy.by/TestForm.php" method="post">
 
         <input type="checkbox" name="check" id="test">
         <label for="test"></label>
-    </form>
+    </form> -->
 
+    <img width="100" src="check.jpg" alt="">
+
+    <h1 draggable="true">Тортуга</h1>
+    <p contenteditable="true">А вслед за этим на Тортуге наступили
+        дни кипучей деятельности: суда оснащались в дальний поход,
+        заготавливалось мясо и другие продукты, грузились различные
+        запасы, необходимые для военных действий.</p>
+
+
+
+
+    <form action="http://fe.it-academy.by/TestForm.php" method="GET">
+
+        <datalist id=animalslist>
+            <option value="собака">
+            <option value="кошка">
+            <option value="попугай">
+        </datalist>
+        Введите вид животного: <input type=text required name="ttt" list=animalslist>
+        <input type="color" required name="test"> <br>
+        <input type="number" min="1" max="10">
+        <input type="text" name="tel" pattern="^(\+375|80) (17|29|25|44|33) (\d{3}) (\d{2}) (\d{2})$" required>
+        <input type="submit">
+    </form>
 </body>
 
 </html>

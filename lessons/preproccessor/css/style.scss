@@ -1,0 +1,115 @@
+@import 'variables.scss';
+@import 'mixin.scss';
+@import 'test.scss';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body{
+    height: 10000px;
+    font-size: 10px;
+    font-weight: 900;
+
+    
+}
+
+h1{
+    font-size: 20px;
+    margin-top: 1em;
+    font-style: italic;
+    
+    ul{
+        li{
+            p{
+                &:last-child{
+                    color: green;
+                }
+            }
+
+           
+        }
+    }
+}
+
+header{
+    background: $red;
+
+    ul{
+        width: 200px;
+
+        li{
+            border: 3px solid $dark-blue;
+
+            color: violet;
+
+            a{
+                text-decoration: none;
+                color: inherit;
+            }
+        }
+    }
+}
+
+.btn1 {
+   @include btn;
+}
+ 
+.btn2 {
+   @include btn(50px,100px, red);
+}
+
+header{
+    height: 50px;
+    background-color:aqua;
+
+    @include blabla(1000px){
+        background-color:chartreuse; 
+    }
+
+    @include blabla(600px){
+        background-color:orange; 
+    }
+}
+
+.wrap{
+    display: flex;
+
+}
+menu{
+    flex-shrink: 0;
+    width: 200px;
+    background-color:red;
+}
+main{
+    flex-grow: 1;
+    background-color:blue;
+    color: #fff;
+}
+
+aside{
+    width: 200px;
+    flex-shrink: 0;
+    background-color:green;
+}
+footer{
+    display: flex;
+    display: grid;
+    height: 50px;
+    background-color: blueviolet;
+}
+
+$start: 1;
+$end: 100;
+
+@for $hhh from $start through $end
+{
+    h#{$hhh}
+    {
+        text-align: center;
+        background-image: url($hhh + '.png');
+    }
+}
