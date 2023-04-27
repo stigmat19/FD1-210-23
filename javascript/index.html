@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+</head>
+
+<body>
+    <script>
+        var sum = 10;//number
+        var a = 'hello \n world';//string
+        var test = 5 > 10;//boolean
+        //undefined
+        //null
+
+
+
+        var basket = 5;
+        basket += 10;
+        basket += 15;
+
+        var test = 5;
+        console.log(test++);
+
+        // var age = 16;
+
+        // if (speed < 60) console.log('норма');
+
+        // else if (speed < 80) console.log('превышение!');
+
+        // else if (speed < 100) console.log('вы с ума сошли!');
+
+        // else console.log('полёт!');
+
+        // var driver = confirm('У вас есть права?');
+
+        // if (driver)
+        //     console.log('права есть');
+        // else
+        //     console.log('прав нет');
+
+        // var isAuth;
+
+
+        // if(age > 18){
+        //     isAuth = true;
+        // }  else{
+        //     isAuth = false
+        // }
+
+        var age = 16;
+        var isAuth = age > 18 ? true : false;
+
+        var colorNumS = prompt('Введите номер цвета в радуге:');
+        var colorNum = parseInt(colorNumS);
+        var colorName;
+        switch (colorNum) {
+            case 1:
+                colorName = 'красный';
+
+            case 2:
+                colorName = 'оранжевый';
+
+            case 3:
+                colorName = 'жёлтый';
+
+            case 4:
+                colorName = 'зелёный';
+
+            case 5:
+                colorName = 'голубой';
+
+            case 6:
+                colorName = 'синий';
+
+            case 7:
+                colorName = 'фиолетовый';
+
+            default: console.log('------color not found');
+        }
+
+        console.log(colorName);
+        colorName = '1';
+        colorName = '2';
+        colorName = '3';
+        colorName = '4';
+
+    </script>
+</body>
+
+</html>

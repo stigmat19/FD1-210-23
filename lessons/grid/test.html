@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .wrap {
+            display: grid;
+            border: solid red 1px;
+            grid-template-columns: 200px 1fr 150px;
+            grid-template-rows: 40px 40px 40px;
+            justify-items: center;
+            align-items: center;
+        }
+        .aaa{
+            background-color: magenta; 
+            grid-column: 2 / 4; 
+            grid-row: 1
+        }
+        .bbb{
+            
+            grid-column: 1;
+            grid-row: 2 / 4;
+            display: flex;
+        }
+        .ccc{
+            background-color: green;
+             grid-column: 2; 
+             grid-row: 2;
+        }
+        .bbb > div{
+            background-color: silver;
+            grid-column: 2; 
+            grid-row: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="aaa">
+            однажды в студёную зимнюю пору</div>
+        <div class="bbb">
+            <div>
+                я из лесу вышел был сильный мороз
+            </div>
+        </div>
+        <div class="ccc">
+            гляжу поднимается<br>медленно в мороз</div>
+    </div>
+</body>
+
+</html>
