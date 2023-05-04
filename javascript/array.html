@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        var a = 5;
+
+        var alphabet = ['a','b','c'];
+        var arr = new Array(1,2,3);
+
+        [] === [] //false !!!!
+
+        alphabet[1] = 'Hello';
+
+
+        var test = [1, true, NaN, undefined, 'hello'] // !!!!
+
+        var user  = ['Ivanov', 'Ivan', 25, 'M'];
+        var user2 = ['Petrov', 'Petr', 30, 'M'];
+        var user3 = ['Sidorova', 'Olga', 22, 'W'];
+        var user4 = [34,'Vaitsiakhovich', 'M', 'Zhenya'];
+
+        function getUserInfo(userData){
+            console.log('Lastname', userData[0]);
+            console.log('name', userData[1]);
+            console.log('age', userData[2]);
+            console.log('gender', userData[3]);
+            console.warn('=============');
+        }
+
+        getUserInfo(user);
+        getUserInfo(user2);
+        getUserInfo(user3);
+        getUserInfo(user4);
+
+
+        // ==============================
+
+    </script>
+    
+</body>
+</html>

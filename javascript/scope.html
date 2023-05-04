@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        var a = 3;
+        var g = 100;
+
+        function f(m) {
+            var a = 5;
+            var b = 10;
+
+            console.log("f видит m=" + m);
+            console.log("f видит a=" + a);
+            console.log("f видит b=" + b);
+            console.log("f видит g=" + g);
+        }
+
+        f(51);
+
+        console.log("основной код видит a=" + a);
+        console.log("основной код видит g=" + g);
+    </script>
+</body>
+
+</html>

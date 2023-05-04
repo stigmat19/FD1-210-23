@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <!-- <style>
+        @mixin aaa($test = 20px, $color){
+            font-size: $test
+        }
+        @include aaa(50px)
+        @include aaa(, red)
+    </style> -->
+
+</head>
+
+<body>
+
+    <script>
+
+        function test(a,b,c){
+            console.log(a)
+            console.log(b)
+        }
+
+        test(null, 5)
+
+        var a = 5;
+
+        var key = 'name';
+
+        var obj = {
+            lastname: 'Ivanov',
+            name: 'Ivan',
+            age: 25,
+            gender: 'M',
+        };
+
+        var users = [
+            {
+                lastname: 'Ivanov',
+                name: 'Ivan',
+                age: 25,
+                gender: 'M'
+            },
+            {
+                lastname: 'Petrov',
+                name: 'Petr',
+                age: 30,
+                gender: 'M'
+            },
+            {
+                lastname: 'Sidorova',
+                name: 'Olga',
+                age: 22,
+                gender: 'W'
+            },
+            {
+                age: 34,
+                name: 'Zhenya',
+                lastname: 'Vaitsiakhovich',
+                gender: 'M'
+            }
+        ];
+        
+
+        for(var n = 0; n<users.length; n++){
+            getUserInfo(users[i])
+        }
+
+        function getUserInfo(userData) {
+            console.log('Lastname', userData['lastname']);
+            console.log('name', userData['name']);
+            console.log('age', userData['age']);
+            console.log('gender', userData['gender']);
+            console.warn('=============');
+        }
+
+       
+
+        // for(var key in obj){
+        //     console.log(`key: ${key}, value: ${obj[key]}`);
+        // }
+
+    </script>
+
+</body>
+
+</html>
