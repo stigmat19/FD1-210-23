@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+#app{
+    display: flex;
+    flex-flow: wrap;
+}
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+.card{
+    margin: 20px;
+}
+
+.divForImg{
+    text-align: center;
+}
+
+.card img{
+    width: 256px;
+    height: 256px;
+}
