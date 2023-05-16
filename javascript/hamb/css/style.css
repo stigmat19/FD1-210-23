@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.wrap{
+    background-color: aqua;
+    position: relative;
+}
+.controls{
+    display: flex;
+    justify-content: flex-end;
+}
+#open{
+    user-select: none;
+}
+#close{
+    user-select: none;
+    display: none;
+}
+
+#menu{
+    background-color:brown;
+    width: 100px;
+    height: 80px;
+    color: ivory;
+    position: absolute;
+    right: 0;
+    transition: 0.5s;
+    transform: translate(100px);
+}
