@@ -26,4 +26,16 @@ $(document).ready(function(){
         $(this).css('display', 'none');
         $('#open').css('display', 'block');
     })
+
+    
+
+    $('#menu').on('click', 'a', function(E){
+        E.preventDefault();
+        var id = $(E.currentTarget).attr('href');
+        var top = $(id).offset().top;
+        $('body, html').animate({
+            scrollTop: top
+        }, 1000)
+        
+    })
 })
